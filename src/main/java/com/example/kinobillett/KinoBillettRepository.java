@@ -24,9 +24,8 @@ public class KinoBillettRepository {
                     innKinoBillett.getEpost());
     }
     public List<KinoBillett> hentalle(){
-        String sql = "SELECT * FROM Billett ORDER BY etternavn";
-        return db.query(sql,
-                new BeanPropertyRowMapper(KinoBillett.class));
+        String sql = "SELECT * FROM Billett ORDER BY etternavn asc";
+        return db.query(sql,new BeanPropertyRowMapper(KinoBillett.class));
     }
     public void slettAlle(){
         String sql = "DELETE FROM Billett";
