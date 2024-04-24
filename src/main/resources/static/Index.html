@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid"></div>
+    <div class="navbar-header"></div>
+    <a class="navbar-brand"
+       href="Index.html">Kinobilletter</a>
+    <ul class="nav navbar-nav">
+        <li class="active"><a
+                href="Index.html">Bestill billett
+        </a></li>
+        <li><a href="Billetter.html">Vis
+            alle billettene</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="row justify-center-center">
+        <div class="col-md-8- col justify-center-center main mx-2 bg-white p-4">
+            <h1 class="text-center display-4 font-weight-normal">
+                Bestilling av kinobilletter</h1>
+                <table class="table table-bordered">
+                    <form id="minForm"
+                    name="minForm">
+                        <tr>
+                            <td>
+                                <label for="film">
+                                    Velg film:
+                                </label>
+                            </td>
+                            <td>
+                                <select class="accordion-body" id="film">
+                                    <option value="">Velg film her</option>
+                                    <option class="valg">Batman Begins</option>
+                                    <option class="valg">Batman : The Dark Knight</option>
+                                    <option class="valg">Batman : The Dark Knight Rises</option>
+                                    <option class="valg">The Batman</option>
+                                </select>
+                                <td>
+                                    <div id="fFilm" style="color: red"></div>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td><label>Antall:</label> <br> </td>
+                            <td>
+                                <label for="antall"></label><input class="form-controll"
+                                                                   id="antall" max="20"
+                                                                   min="1"
+                                                                   name="antall" type="number">
+                                <td>
+                            <div id="fAntall"
+                                style="color:red">
+                            </div>
+                        </td>
+                        </tr>
+                        <tr>
+                            <td><label>Fornavn:</label></td>
+                            <td><label for="fornavn"></label><input class="form-controll"
+                                                                    id="fornavn" type="text"></td>
+                            <td>
+                                <div id="FNavn"
+                                style="color: red">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Etternavn:</label> </td>
+                            <td><input class="form-controll"
+                            id="etternavn"
+                            type="text"></td>
+                            <td>
+                                <div id="fENavn" style="color: red"></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Telefonnr:</label></td>
+                            <td>
+                                <input class="form-controll"
+                                id="telefonnr"
+                                type="tel">
+                            </td>
+                            <td> <div id="fTlfNr"
+                            style="color: red"></div></td>
+                        </tr>
+                        <tr>
+                            <td><label>Epost:</label></td>
+                            <td><label for="epost"></label><input class="form-controll"
+                                                                  id="epost"
+                                                                  type="email"></td>
+                            <td><div id="fEpost" style="color: red"></div>
+                            </td>
+                        </tr>
+
+
+                    </form>
+                </table>
+                <tr>
+                    <td>
+                        <button class="btn btn-primary"
+                                id="kjopBillett"
+                                onclick="regBillett()"
+                                type="submit">Kjøp billett
+                        </button>
+                    </td>
+        </div>
+    </div>
+</div>
+</body>
+<script src="Script.js" type="application/javascript"></script>
+</html>

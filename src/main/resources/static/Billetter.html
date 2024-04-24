@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <title>ODEON Nydalen</title>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid"></div>
+        <div class="navbar-header"></div>
+            <a class="navbar-brand"
+               href="Index.html">Kinobilletter</a>
+            <ul class="nav navbar-nav">
+                <li><a
+                        href="Index.html">Bestill billett
+                </a></li>
+                <li class="active"><a href="Billetter.html">Vis
+                    alle billettene</a></li>
+            </ul>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Alle billettene</h2>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Film</th>
+                    <th>Antall</th>
+                    <th>Fornavn</th>
+                    <th>Etternavn</th>
+                    <th>Telefonnr</th>
+                    <th>Epost</th>
+                </tr>
+                </thead>
+                <tbody id="alleBillettene">
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <button class="btn btn-danger" onclick="slettBilletter()">
+                Slett alle billettene
+            </button>
+        </div>
+    </div>
+</div>
+x
+</body>
+<script src="Billetter.js" type="application/javascript"></script>
+</html>
