@@ -24,7 +24,7 @@ public class KinoBillettRepository {
                     innKinoBillett.getEpost());
     }
     public List<KinoBillett> hentalle(){
-        String sql = "SELECT * FROM Billett";
+        String sql = "SELECT * FROM Billett ORDER BY etternavn";
         return db.query(sql,
                 new BeanPropertyRowMapper(KinoBillett.class));
     }
